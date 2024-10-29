@@ -49,7 +49,7 @@ const CalendarApp = () => {
             <span>26</span>
             <span>27</span>
             <span>28</span>
-            <span>29</span>
+            <span className="current-day">29</span>
             <span>30</span>
             <span>31</span>
         </div>
@@ -63,7 +63,7 @@ const CalendarApp = () => {
             </div>
             <textarea placeholder="Enter Event Text (Maxiumum 60 Characters)"></textarea>
             <button className="event-popup-btn">Add Event</button>
-            <button classsName="close-event-popup">
+            <button className="close-event-popup">
                 <i className="bx bx-x"></i>
             </button>
         </div>

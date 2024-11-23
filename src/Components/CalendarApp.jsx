@@ -107,7 +107,17 @@ const CalendarApp = () => {
   const handleTimeChange = (e) => {
     const {name, value} =e.target
 
-    setEventTime((prevTime) => ({...prevTime, [name]: value.padStart(2, "0")})) 
+    let sanitizedValue = value.replace(/\D/g, "");
+
+    if (name === "hours") {
+      sanitizedValue = Math.min(Math.max(0, Number(sanitizedValue)), 24); 
+    } else if (name === "minutes") {
+      sanitizedValue = Math.min(Math.max(0, Number(sanitizedValue)), 59); 
+    }
+
+    sanitizedValue = sanitizedValue.toString().padStart(2, "0");
+
+    setEventTime((prevTime) => ({...prevTime, [name]: sanitizedValue.padStart(2, "0")})) 
   }
 
   return (

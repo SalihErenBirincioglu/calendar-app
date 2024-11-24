@@ -163,7 +163,7 @@
     width: clamp(4rem, 4cqi, 7rem);
     height: 4rem;
     text-align: center;
-    font-size: clamp(1.2rem, 1.2cqi, 1.6rem);;
+    font-size: clamp(1.2rem, 1.2cqi, 1.6rem);
 }
 
 .time-input input[type = "number"]::-webkit-outer-spin-button,
@@ -190,7 +190,7 @@
 .event-popup textarea::placeholder{
     font-size: clamp(1rem, 0.8cqi, 1.2rem);
     color: #78879e;
-}e
+}
 
 .event-popup textarea:focus::placeholder {
     color: transparent;
@@ -254,7 +254,7 @@
 }
 
 .event-time { 
-    font-size: clamp(1.3rem, 1cqi, 1.6rem);;
+    font-size: clamp(1.3rem, 1cqi, 1.6rem);
     line-height: 4rem;
     font-weight: bold;
     color: #fff;

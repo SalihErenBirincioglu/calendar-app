@@ -110,7 +110,7 @@ const CalendarApp = () => {
     let sanitizedValue = value.replace(/\D/g, "");
 
     if (name === "hours") {
-      sanitizedValue = Math.min(Math.max(0, Number(sanitizedValue)), 24); 
+      sanitizedValue = Math.min(Math.max(0, Number(sanitizedValue)), 23); 
     } else if (name === "minutes") {
       sanitizedValue = Math.min(Math.max(0, Number(sanitizedValue)), 59); 
     }
@@ -161,7 +161,7 @@ const CalendarApp = () => {
                 <input type="number" 
                 name="hours" 
                 min={0} 
-                max={24} 
+                max={23} 
                 className="hours" 
                 value={eventTime.hours} 
                 onChange={handleTimeChange}

@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const eventSchema = new mongoose.Schema({
-  userId: { type: String, required: true }, // Link events to users
+  userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
   date: { type: Date, required: true },
   time: { type: String, required: true },
   text: { type: String, required: true, maxlength: 60 },

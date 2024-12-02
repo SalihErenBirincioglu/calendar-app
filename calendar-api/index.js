@@ -24,6 +24,7 @@ app.use(
 );
 app.use(passport.initialize());
 app.use(passport.session());
+console.log('MongoDB URI:', process.env.MONGO_URI);
 
 // Database connection
 mongoose

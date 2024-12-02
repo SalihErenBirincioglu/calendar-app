@@ -1,0 +1,5 @@
+If the repository already exists then you have to do the following:
+
+git rm -r --cached .
+git add .
+git commit -m ".gitignore is now working"
